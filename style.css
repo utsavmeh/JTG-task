@@ -1,3 +1,7 @@
+:root {
+	--varaiable: 10px;
+}
+
 body {
 	overflow-x: hidden;
 	margin: 0;
@@ -25,7 +29,7 @@ body {
 }
 .first-block {
 	background-image: url("./Background/Background.png");
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 /* NAVBAR */
@@ -41,6 +45,7 @@ body {
 .navbar {
 	display: inline-block;
 	width: 100%;
+	box-sizing: border-box;
 }
 
 ul {
@@ -55,27 +60,93 @@ li {
 .download-btns {
 	float: right;
 }
-.content {
-	margin-top: 18%;
-}
+
 .headings {
-	margin-top: 5%;
+	position: relative;
+	margin-top: 20%;
 	/* line-height: 80px; */
 	float: left;
-	font-size: 4vw;
+	font-size: 72px;
 	font-weight: 800;
 	color: #18191f;
 }
-.headings button {
+/* .headings::before {
+	content: "Organise Projects.";
+	position: absolute;
+	bottom: -100%;
+	left: 0%;
+} */
+.headings::after {
+	content: "Get more done.";
+	position: absolute;
+	bottom: -1.2em;
+	left: 0%;
+}
+.getstarted {
+	position: absolute;
+	top: 200%;
+}
+.getstarted button {
 	background-color: #8c30f5;
 	border-radius: 6px;
 	padding: 12px 32px;
 	color: white;
 	margin-left: 10px;
 }
-
 .iphone {
 	float: right;
+	margin-top: 15%;
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 890px) {
+	.headings {
+		font-size: 36px;
+	}
+	.getstarted button {
+		border-radius: 6px;
+		padding: 6px 16px;
+	}
+	.iphone {
+		bottom: 10%;
+	}
+}
+
+@media only screen and (min-device-width: 415px) and (max-device-width: 700px) {
+	.content {
+		position: relative;
+	}
+	.headings {
+		font-size: 18px;
+	}
+	.getstarted button {
+		border-radius: 6px;
+		padding: 6px 16px;
+	}
+	.iphone img {
+		width: 75%;
+		height: 60%;
+		float: right;
+		margin-top: 10%;
+	}
+}
+@media screen and (max-width: 415px) {
+	.content {
+		position: relative;
+	}
+	.headings {
+		font-size: 18px;
+	}
+
+	.getstarted button {
+		border-radius: 6px;
+		padding: 6px 16px;
+	}
+	.iphone img {
+		width: 50%;
+		height: 50%;
+		float: right;
+		margin-top: 10%;
+	}
 }
 
 hr {
@@ -103,11 +174,29 @@ hr {
 	margin-right: 2vw;
 	text-align: center;
 }
+.carouselbutton {
+	border: none;
+	background: none;
+}
 
+.carouselbutton:hover {
+	cursor: pointer;
+}
+
+.carouselwindow ul li {
+	/* height: 60px; */
+	overflow-x: hidden;
+}
+
+/* TAILOR MADE FEATURES */
+.tailor {
+	padding-bottom: 50px;
+}
 .tailor-container {
-	width: 30vw;
+	width: 35vw;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 	margin-top: 80px;
 }
 
@@ -134,6 +223,34 @@ hr {
 	clear: both;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.tailor-container {
+		width: 70vw;
+	}
+	.column {
+		width: 70%;
+		margin-left: 10%;
+	}
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 768px) {
+	.tailor-container {
+		width: 90vw;
+	}
+	.column {
+		width: 90%;
+		margin-left: 3%;
+	}
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 400px) {
+	.tailor-container {
+		width: 100vw;
+	}
+	.column {
+		width: 90%;
+	}
+}
 .real-customers {
 	background-color: #d5fafc;
 	padding-top: 50px;
@@ -201,7 +318,7 @@ hr {
 }
 
 .headline {
-	margin-top: 25vh;
+	margin-top: 10vw;
 }
 
 a {
@@ -212,8 +329,12 @@ a:after {
 	color: purple;
 }
 
-/* a:hover {
-	font-size: 15px;
+.icons {
+	float: right;
+}
+
+/* @media only screen and (min-device-width: 300px) and (max-device-width: 400px) {
+	
 } */
 
 .footer {
@@ -237,4 +358,82 @@ a:after {
 	margin-top: 15px;
 	color: white;
 	font-size: 10px;
+}
+
+@media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
+	.column-35 {
+		width: 70%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.achievements h1 {
+		font-size: 40px;
+	}
+	.achievements p {
+		font-size: 15px;
+	}
+	.halfiphone {
+		margin-top: 5vw;
+		background-color: #f1e4ff;
+		border: 1px;
+		border-radius: 5px;
+		text-align: center;
+		max-height: 60vw;
+		overflow: hidden;
+	}
+	.icons {
+		float: none;
+		padding-top: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 760px) {
+	.column-35 {
+		width: 100%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.achievements h1 {
+		font-size: 30px;
+	}
+	.achievements p {
+		font-size: 10px;
+	}
+	.halfiphone {
+		margin-top: 5vw;
+		background-color: #f1e4ff;
+		border: 1px;
+		border-radius: 5px;
+		text-align: center;
+		max-height: 60vw;
+		overflow: hidden;
+	}
+	.halfiphone img {
+		width: 75%;
+		height: 75%;
+	}
+	.icons {
+		float: none;
+		padding-top: 40px;
+	}
+	.column-50 {
+		text-align: center;
+		width: 70%;
+		margin-left: 10vw;
+	}
+	.column-80 {
+		float: left;
+		width: 100%;
+	}
+	.column-20 {
+		float: left;
+		width: 100%;
+		padding-bottom: 5px;
+	}
+	.download-img img {
+		width: 50%;
+		height: 50%;
+	}
 }

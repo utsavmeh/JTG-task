@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
 		<title>Josh Technology Group</title>
+
 	</head>
 	<body>
 		<div class="first-block">
@@ -35,49 +36,51 @@
 				</div>
 
 				<!-- CONTENT -->
-
 				<div class="content">
 					<div class="headings">
 						Organise projects.
-						<br />
-						Get more done.
-						<br />
-						<button>Get Started</button>
+						<div class="getstarted">
+							<button>Get Started</button>
+						</div>
 					</div>
-
+			
 					<div class="iphone">
 						<img src="images/iPhone X.png" />
 					</div>
 				</div>
 			</div>
+			
 		</div>
 
 		<div class="carousel container">
 			<hr style="margin-top: 10px;" />
 			<ul class="carouselul">
-				<button onclick="show(-1)">
+				<button class="carouselbutton" onclick="changeImg(1)">
 					<img class="img1" src="images/Vector-1.png" />
 				</button>
-				<li class="carouselli">
-					<img class="img1" src="logos/Logo Clouds/Airbnb Logo.png" />
-				</li>
-				<li class="carouselli">
-					<img class="img2" src="logos/Logo Clouds/FedEx Logo.png" />
-				</li>
-				<li class="carouselli">
-					<img class="img3" src="logos/Logo Clouds/Google Logo.png" />
-				</li>
-				<li class="carouselli">
-					<img class="img4" src="logos/Logo Clouds/Hubspot Logo.png" />
-				</li>
-				<li class="carouselli">
-					<img class="img5" src="logos/Logo Clouds/Microsoft Logo.png" />
-				</li>
-				<li class="carouselli">
-					<img class="img6" src="logos/Logo Clouds/Walmart Logo.png" />
-				</li>
-
-				<button onclick="show(+1)">
+				<div class="carouselwindow">
+					<ul>
+					<li class="carouselli">
+						<a href="#" id="firstLink"><img name="img1" src="./logos/Logo Clouds/Airbnb Logo.png" /></a>
+					</li>
+					<li class="carouselli">
+						<a href="#" id="secondlink"><img name="img2" src="./logos/Logo Clouds/FedEx Logo.png" /></a>
+					</li>
+					<li class="carouselli">
+						<a href="#" id="thirdlink"><img name="img3" src="./logos/Logo Clouds/Google Logo.png" /></a>
+					</li>
+					<li class="carouselli">
+						<a href="#" id="fourthlink"><img name="img4" src="./logos/Logo Clouds/Hubspot Logo.png" /></a>
+					</li>
+					<li class="carouselli">
+						<a href="#" id="fifthlink"><img name="img5" src="./logos/Logo Clouds/Microsoft Logo.png" /></a>
+					</li>
+					<li class="carouselli">	
+						<a href="#" id="sixthlink"><img name="img6" src="./logos/Logo Clouds/Walmart Logo.png" /></a>
+					</li>
+					</ul>
+				</div>
+				<button class="carouselbutton" onclick="changeImg(-1)">
 					<img class="img1" src="images/Vector.png" />
 				</button>
 			</ul>
@@ -85,7 +88,7 @@
 		</div>
 
 		<!-- TAILOR-MADE FEATURES -->
-
+	<div class="tailor">
 		<div class="tailor-container">
 			<h2>Tailor-made features</h2>
 			<div class="lorem">
@@ -168,6 +171,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
 		<!-- REAL STORIES FROM REAL CUSTOMERS -->
 
@@ -186,15 +190,16 @@
 			<div class="row">
 				<div class="column-35">
 					<h1>Our 18 Years of achievements</h1>
-					<p style="margin-top: -20px; font-size: 18px;">
+					<p style="margin-top: -20px;">
 						with our super power we have reached this
 					</p>
 					<div class="halfiphone">
 						<img src="./images/iPhone X.png" />
 					</div>
 				</div>
-
-				<div class="column-35" style="float: right;">
+			
+				<div class="column-35 icons" >
+					
 					<div class="row">
 						<div class="column-50 mt-5">
 							<div class="column-20">
@@ -255,6 +260,7 @@
 						</a>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 
@@ -281,8 +287,10 @@
 							<p>&copy; 2020 Taskado. All rights reserved</p>
 						</div>
 					</div>
-					<div class="column-20r">
+					<div class="column-20r download-img">
 						<p>Get the App</p>
+						<img src="./images/googleplay.png">
+						<img src="./images/appstore.png">
 					</div>
 				</div>
 			</div>
