@@ -4,11 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-		<script defer src="./owl.carousel.min.js"></script>
-		<link rel="stylesheet" href="./owl.carousel.min.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js" integrity="sha512-KCwrxBJebca0PPOaHELfqGtqkUlFUCuqCnmtydvBSTnJrBirJ55hRG5xcP4R9Rdx9Fz9IF3Yw6Rx40uhuAHR8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+		<link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+		<link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+
 		<link rel="stylesheet" href="./style.css" />
 		<title>Josh Technology Group</title>
 
@@ -20,16 +18,8 @@
 			<div class="container">
 				<div class="navbar">
 					<div style="display: inline-block;" class="logo">
-						<div class="row">
-							<div class="column-10">
-								<img src="images/logo.png" alt="logo" />
-							</div>
-							<div class="column" style="margin-right: -50px;">
-								<b>Taskdo</b>
-							</div>
-						</div>
-						
-						
+						<img src="images/logo.png" alt="logo" />
+						<span>Taskdo</span>
 					</div>
 					<span class="resp-menu-shadow"></span>
 					<span class="drawer-menu"></span>
@@ -64,29 +54,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="container">
-			<!-- <button style="float: left; margin-top: 5%; margin-left: 24px; background-color: #fff; border: none;" onclick=""><img src="./images/Vector-1.png"></button> -->
-			<hr style="margin-bottom: 40px;" />
-			<div class="carousel-wrapper">
 			
-			<div class="owl-carousel owl-theme">
-				
-				<div> <img class="img1" src="./logos/Logo Clouds/Airbnb Logo.png" /></div>
-				<div> <img class="img1" src="./logos/Logo Clouds/Hubspot Logo.png" /> </div>
-				<div> <img class="img1" src="./logos/Logo Clouds/Google Logo.png" /> </div>
-				<div> <img class="img1" src="./logos/Logo Clouds/Microsoft Logo.png" /> </div>
-				<div> <img class="img1" src="./logos/Logo Clouds/Walmart Logo.png" /> </div>
-				<div> <img class="img1" src="./logos/Logo Clouds/FedEx Logo.png" /> </div>
-				<div> <img class="img1" src="./logos/Logo Clouds/BookMyShow Logo.png" /></div>
-				
-			</div>
-			</div>
-			<hr style="margin-top: 10px" />
 		</div>
-		
-			<!-- <ul>
+		<div class="owl-carousel owl-theme">
+			<ul>
 				<button  class="carouselbutton">
 					<img class="img1" src="images/Vector-1.png" />
 				</button>
@@ -115,9 +86,9 @@
 				<button class="carouselbutton" >
 					<img class="img1" src="images/Vector.png" />
 				</button>
-			</ul> -->
+			</ul>
 			<!-- <div> Your Content </div> -->
-		
+		</div>
 
 		<!-- <div class="carousel container">
 			<hr style="margin-top: 10px;" />
@@ -170,7 +141,7 @@
 
 								<div class="mt-2 center">
 									<b>Robust Workflow</b>
-									<div class="mt-2">
+									<div class="mt-1">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 										erat nibh tristique ipsum.
 									</div>
@@ -182,7 +153,7 @@
 
 							<div class="mt-2 center">
 								<b>Flexibility</b>
-								<div class="mt-2">
+								<div class="mt-1">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
 									nibh tristique ipsum.
 								</div>
@@ -193,19 +164,19 @@
 								<img src="./images/FeatureIcon/03.png" />
 								<div class="mt-2 center">
 									<b class="mt-2">User Friendly</b>
-									<div class="mt-2">
+									<div class="mt-1">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
 										erat nibh tristique ipsum.
 									</div>
-								</div>	
+								</div>
+							
 						</div>
-						<div class="row" style="margin-top: -10px;">
 						<div class="column mt-5 center">
 							<img src="./images/FeatureIcon/04.png" />
 
 							<div class="mt-2 center">
 								<b>Multiple Layouts</b>
-								<div class="mt-2">
+								<div class="mt-1">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
 									nibh tristique ipsum.
 								</div>
@@ -216,7 +187,7 @@
 
 							<div class="mt-2 center">
 								<b>Better Components</b>
-								<div class="mt-2">
+								<div class="mt-1">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
 									nibh tristique ipsum.
 								</div>
@@ -227,12 +198,11 @@
 
 							<div class="mt-2 center">
 								<b>Well Organized</b>
-								<div class="mt-2">
+								<div class="mt-1">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
 									nibh tristique ipsum.
 								</div>
 							</div>
-						</div>
 						</div>
 				</div>
 			</div>
@@ -250,26 +220,20 @@
 				<div class="grid-container">
 					<div class="cols-box">
 						<div class="story-box">
-							<img src="./logos/Logo Clouds/Hubspot Logo.png" />
-							<p>To quickly start my startup landing page design, I was looking for a landing page UI Kit. Landify is one of the best landing page UI kit I have come across. It’s so flexible, well organised and easily editable.</p>
-							<p style="font-weight: bold;">Floyd Miles</p>
-							<div style="margin-top:-20px; font-size: 14px; color: #969BAB;">Vice President, GoPro</div>
+							<img src="" />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
 						</div>
 					</div>
 					<div class="cols-box">
 						<div class="story-box">
-							<img src="./logos/Logo Clouds/Airbnb Logo.png" />
-							<p>I used landify and created a landing page for my startup within a week. The Landify UI Kit is simple and highly intuitive, so anyone can use it. </p>
-							<p style="font-weight: bold;">Jane Cooper</p>
-							<div style="margin-top:-20px; font-size: 14px; color: #969BAB;">CEO, Airbnb</div>
+							<img src="" />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
 						</div>
 					</div>
 					<div class="cols-box">
 						<div class="story-box">
-							<img src="./logos/Logo Clouds/BookMyShow Logo.png" />
-							<p>Landify saved our time in designing my company page. </p>
-							<p style="font-weight: bold;">Kristin Watson</p>
-							<div style="margin-top:-20px; font-size: 14px; color: #969BAB;">Co-Founder, BookMyShow</div>
+							<img src="" />
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </p>
 						</div>
 					</div>
 				</div>
@@ -347,8 +311,7 @@
 							risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
 							suscipit non. Non commodo volutpat, pharetra, vel.
 						</p>
-						
-						<a href="#"> Get Started <img src="./Vector.svg"></a>
+						<a href="#"> Get Started</a>
 						</a>
 					</div>
 				</div>
@@ -376,12 +339,12 @@
 							<a href="#" style="margin-left: 20px;"> Privacy Policy</a>
 						</div>
 						<div>
-							<p style="font-size: 14px; margin-top: 24px;">&copy; 2020 Taskado. All rights reserved</p>
+							<p>&copy; 2020 Taskado. All rights reserved</p>
 						</div>
 					</div>
 					<div class="column-20r download-img">
-						<p style="font-size:18px">Get the App</p>
-						<img src="./images/googleplay.png" style="margin-bottom: 10px;">
+						<p>Get the App</p>
+						<img src="./images/googleplay.png">
 						<img src="./images/appstore.png">
 					</div>
 				</div>
@@ -407,70 +370,14 @@
 		});
 
 	</script>
-	<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
-	<!-- <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="/node_modules/jquery/dist/jquery.js"></script>
+	<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 	<script src="/bower_components/jquery/dist/jquery.js"></script>
-	<script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script> -->
+	<script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 	<script type="text/javascript">
-// 	$(window).load(function(){
-// $('.owl-carousel').owlCarousel();
-// 	});
-		// $(document).ready(function(){
-		// $('.owl-carousel').owlCarousel();
-		
-		// });
-		
+		$(document).ready(function(){
+		$('.owl-carousel').owlCarousel();
+		});
 	</script>
-	  <script>
-		  $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-		loop: true,
-    nav: true,
-    items: 6,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    dots: true,
-	// 	loop:true,	
-    //   margin: 30,
-    //   nav: true,
-    navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
-		// // navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-	// dots: true,
-      responsive: {
-		  0: {	
-          items: 1
-        },
-        100: {
-          items: 2
-        },
-        200: {
-          items: 1
-        },
-		300:{
-			items: 3
-		},
-		400:{
-			items:3
-		},
-		500:{
-			items:3
-		}
-		,600:{
-			items:6
-		}
-        // 0: {
-        //   items: 1
-        // },
-        // 600: {
-        //   items: 2
-        // },
-        // 1000: {
-        //   items: 3
-        // }
-      }
-    });
-});
-  </script>
 
 </html>
