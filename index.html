@@ -7,8 +7,7 @@
 		<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 		<script defer src="./owl.carousel.min.js"></script>
 		<link rel="stylesheet" href="./owl.carousel.min.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/fontawesome.min.js" integrity="sha512-KCwrxBJebca0PPOaHELfqGtqkUlFUCuqCnmtydvBSTnJrBirJ55hRG5xcP4R9Rdx9Fz9IF3Yw6Rx40uhuAHR8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+		
 		<link rel="stylesheet" href="./style.css" />
 		<title>Josh Technology Group</title>
 
@@ -66,12 +65,12 @@
 			</div>
 		</div>
 		
-		<div class="container">
+		<div class="container" style="overflow: visible;">
 			<!-- <button style="float: left; margin-top: 5%; margin-left: 24px; background-color: #fff; border: none;" onclick=""><img src="./images/Vector-1.png"></button> -->
 			<hr style="margin-bottom: 40px;" />
 			<div class="carousel-wrapper">
 			
-			<div class="owl-carousel owl-theme">
+			<div class="owl-carousel owl-theme" style="overflow: visible;">
 				
 				<div> <img class="img1" src="./logos/Logo Clouds/Airbnb Logo.png" /></div>
 				<div> <img class="img1" src="./logos/Logo Clouds/Hubspot Logo.png" /> </div>
@@ -86,73 +85,7 @@
 			<hr style="margin-top: 10px" />
 		</div>
 		
-			<!-- <ul>
-				<button  class="carouselbutton">
-					<img class="img1" src="images/Vector-1.png" />
-				</button>
-				
-					
-					<li>
-						<a href="#" id="firstLink"><img name="img1" src="./logos/Logo Clouds/Airbnb Logo.png" /></a>
-					</li>
-					<li>
-						<a href="#" id="secondlink"><img name="img2" src="./logos/Logo Clouds/FedEx Logo.png" /></a>
-					</li>
-					<li>
-						<a href="#" id="thirdlink"><img name="img3" src="./logos/Logo Clouds/Google Logo.png" /></a>
-					</li>
-					<li>
-						<a href="#" id="fourthlink"><img name="img4" src="./logos/Logo Clouds/Hubspot Logo.png" /></a>
-					</li>
-					<li>
-						<a href="#" id="fifthlink"><img name="img5" src="./logos/Logo Clouds/Microsoft Logo.png" /></a>
-					</li>
-					<li>	
-						<a href="#" id="sixthlink"><img name="img6" src="./logos/Logo Clouds/Walmart Logo.png" /></a>
-					</li>
-					
-				
-				<button class="carouselbutton" >
-					<img class="img1" src="images/Vector.png" />
-				</button>
-			</ul> -->
-			<!-- <div> Your Content </div> -->
-		
-
-		<!-- <div class="carousel container">
-			<hr style="margin-top: 10px;" />
-			<ul class="carouselul">
-				<button class="carouselbutton" onclick="changeImg(1)">
-					<img class="img1" src="images/Vector-1.png" />
-				</button>
-				<div class="carouselwindow">
-					<ul>
-					<li class="carouselli">
-						<a href="#" id="firstLink"><img name="img1" src="./logos/Logo Clouds/Airbnb Logo.png" /></a>
-					</li>
-					<li class="carouselli">
-						<a href="#" id="secondlink"><img name="img2" src="./logos/Logo Clouds/FedEx Logo.png" /></a>
-					</li>
-					<li class="carouselli">
-						<a href="#" id="thirdlink"><img name="img3" src="./logos/Logo Clouds/Google Logo.png" /></a>
-					</li>
-					<li class="carouselli">
-						<a href="#" id="fourthlink"><img name="img4" src="./logos/Logo Clouds/Hubspot Logo.png" /></a>
-					</li>
-					<li class="carouselli">
-						<a href="#" id="fifthlink"><img name="img5" src="./logos/Logo Clouds/Microsoft Logo.png" /></a>
-					</li>
-					<li class="carouselli">	
-						<a href="#" id="sixthlink"><img name="img6" src="./logos/Logo Clouds/Walmart Logo.png" /></a>
-					</li>
-					</ul>
-				</div>
-				<button class="carouselbutton" onclick="changeImg(-1)">
-					<img class="img1" src="images/Vector.png" />
-				</button>
-			</ul>
-			<hr style="margin-top: 10px;" />
-		</div> -->
+			
 
 		<!-- TAILOR-MADE FEATURES -->
 	<div class="tailor">
@@ -407,19 +340,8 @@
 		});
 
 	</script>
-	<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
-	<!-- <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-	<script src="/bower_components/jquery/dist/jquery.js"></script>
-	<script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script> -->
-	<script type="text/javascript">
-// 	$(window).load(function(){
-// $('.owl-carousel').owlCarousel();
-// 	});
-		// $(document).ready(function(){
-		// $('.owl-carousel').owlCarousel();
-		
-		// });
-		
+	
+	<script type="text/javascript">		
 	</script>
 	  <script>
 		  $(document).ready(function(){
@@ -431,43 +353,28 @@
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     dots: true,
-	// 	loop:true,	
-    //   margin: 30,
-    //   nav: true,
+	
     navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
-		// // navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-	// dots: true,
-      responsive: {
+     responsive: {
 		  0: {	
           items: 1
         },
-        100: {
+        200: {
           items: 2
         },
-        200: {
-          items: 1
-        },
-		300:{
+		400:{
 			items: 3
 		},
-		400:{
-			items:3
+		600:{
+			items:4
 		},
-		500:{
-			items:3
-		}
-		,600:{
+		800:{
+			items:5
+		},
+		1000:{
 			items:6
 		}
-        // 0: {
-        //   items: 1
-        // },
-        // 600: {
-        //   items: 2
-        // },
-        // 1000: {
-        //   items: 3
-        // }
+       
       }
     });
 });
